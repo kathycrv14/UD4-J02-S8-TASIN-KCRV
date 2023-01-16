@@ -1,0 +1,72 @@
+.sectionGeneral{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: wrap;
+}
+
+.sectionDatos{
+    border: 1px none;
+    border-color: none;
+    border-radius: 8px;
+    background-color: rgb(232, 232, 255);
+    width: 50%;
+    padding: 2rem;
+}
+
+.sectionTitulo{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.sectionDatosNombre{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: wrap;
+}
+
+.sectionDatosApellido{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: wrap;
+}
+
+.sectionDatosEdad{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: wrap;
+}
+
+.sectionButton{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: wrap;
+    padding: 1rem;
+}
+
+table{
+    width: 100%;
+    border: 1px solid;
+    border-color: rgb(115, 150, 255);
+    text-align: center;
+}
+
+thead, th, tr, td{
+    border: 1px solid;
+    border-color: rgb(115, 150, 255);
+    align-items: center;
+    align-content: center;    
+    justify-content: center;
+    justify-items: center;
+}
+
+.btnEnviar{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: wrap;
+}

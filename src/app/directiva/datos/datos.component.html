@@ -1,0 +1,75 @@
+<section class="sectionGeneral">
+    <section class="sectionDatos row">
+        <section class="sectionTitulo">
+            <h3>DATOS GENERALES</h3>
+        </section>
+        <form action="">
+            <section class="sectionDatosNombre">
+                <section class="col-6">
+                    <p>Nombre:</p>
+                </section>
+                <section class="col-6">
+                    <input type="text" #nombre>
+                </section>            
+            </section>
+            <section class="sectionDatosApellido">
+                <section class="col-6">
+                    <p>Apellidos:</p>
+                </section>
+                <section class="col-6">
+                    <input type="text" #apellido>
+                </section>
+            </section>
+            <section class="sectionDatosEdad">
+                <section class="col-6">
+                    <p>Edad:</p>
+                </section>
+                <section class="col-6">
+                    <input type="text" #edad>
+                </section>
+            </section>
+            <section class="sectionButton">
+                <input type="button" value="Enviar" class="btnEnviar" (click)="Validar(nombre.value, apellido.value, edad.value)">
+            </section>            
+        </form>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            Nombre
+                        </th>
+                        <th>
+                            Apellido
+                        </th>
+                        <th>
+                            Edad
+                        </th>
+                        <th>
+                            Descripcion
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let pessoa of personas">
+                        <td>
+                            {{ pessoa.nombre }}
+                        </td>
+                        <td>
+                            {{ pessoa.apellido }}
+                        </td>
+                        <td>
+                            {{ pessoa.edad }}
+                        </td>
+                        <td>
+                            <p *ngIf="pessoa.edad >= 18; else menor "> Mayor de edad</p>
+                            <ng-template #menor>
+                                <p>Menor de edad</p>
+                            </ng-template>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </section>
+</section>
